@@ -8,11 +8,25 @@
   <meta name="description" content="The HTML5 Herald">
   <meta name="author" content="SitePoint">
 
-  <link rel="stylesheet" href="css/styles.css?v=1.0">
+  <link rel="stylesheet" href="">
+  <style>
+          .loading__anim {  width: 35px;  height: 35px; display: inline-block; border: 5px solid rgba(189,189,189 ,0.25);  border-left-color: rgba(3,155,229 ,1);  border-top-color: rgba(3,155,229 ,1); border-radius:50%; @keyframes rotate { to {  transform: rotate(1turn) }} }
+          .loading {  max-width: 50%;  line-height: 1.4;  font-size: 1.2rem;  font-weight: bold;  text-align: center;}
+          .loading__author {  font-weight: normal;  font-size: 0.9rem;  color: rgba(189,189,189 ,1);  margin: 0.6rem 0 2rem 0;  display: block;}
+          body {  display: flex;  justify-content: center;  align-items: center;  min-height: 100vh;}
+          @keyframes rotate {
+            to {
+                transform: rotate(1turn)
+              }}
+
+  </style>
 
 </head>
 
 <body>
-  <script src="js/scripts.js"></script>
+  <section class="loading">
+    This is a test loading screen;
+    <span class="loading__author"> - Your friends at Slack</span>;    <span class="loading__anim"></span>
+  </section>
 </body>
 </html>
